@@ -21,12 +21,12 @@ int main()
             if (strcmp(buffer, "") != 0)
             {
                 printf("%s\n", buffer);
-
                 strcpy(buffer, "");
             }
         }
         else
         {
+            // I'm using charToStr to turn a char into a null terminated string.
             charToStr[0] = c;
             strcat(buffer, charToStr);
         }

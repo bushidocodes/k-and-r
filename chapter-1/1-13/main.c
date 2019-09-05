@@ -21,7 +21,7 @@ int main(void)
         case '\n':
         case '\t':
         case ' ':
-            if (lengthOfCurrentWord != 0)
+            if (lengthOfCurrentWord > 0)
             {
                 lengthsOfWords[lengthOfCurrentWord - 1]++;
                 lengthOfCurrentWord = 0;
@@ -36,7 +36,7 @@ int main(void)
     {
         putchar('\n');
         printf("%2d|", i + 1);
-        for (int j = 0; j < lengthsOfWords[i - 1]; j++)
+        for (int j = 0; j < lengthsOfWords[i]; j++)
         {
             putchar('*');
         }

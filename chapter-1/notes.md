@@ -1,3 +1,6 @@
+Primitives are Characters, Integers, Floats
+Pointers, Arrays, Structures, and Unions
+
 A sequence of characters in double quotes is a character string or string constant
 
 Text I/O is dealt with a streams of characters

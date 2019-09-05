@@ -12,7 +12,7 @@
 
 int main(void)
 {
-    char c;
+    char c = 0;
     int frequencyOfASCIIChars[ASCII_RANGE] = {0};
 
     while ((c = getchar()) != EOF)

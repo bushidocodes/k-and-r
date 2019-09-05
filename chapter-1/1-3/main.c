@@ -18,11 +18,11 @@ main()
 
     fahr = lower;
     printf("Temperature Table\n");
-    printf("Fahrenheit\tCelsuis\n");
+    printf("Fahrenheit\t Celsuis\n");
     while (fahr <= upper)
     {
         celsius = (5.0 / 9.0) * (fahr - 32.0);
-        printf("%3.0fF*\t\t%6.1fC*\n", fahr, celsius);
+        printf("%3.0f *F\t\t%6.1f *C\n", fahr, celsius);
         fahr += step;
     }
 }

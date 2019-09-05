@@ -11,21 +11,11 @@ float fahrToCelcius(float fahr);
 
 int main()
 {
-    float fahr, celsius;
-    int lower, upper, step;
-
-    lower = 0;   /* lower limit of temp table */
-    upper = 300; /* upper limit of temp table */
-    step = 20;   /* step size */
-
-    fahr = lower;
     printf("Temperature Table\n");
     printf("Fahrenheit\tCelsuis\n");
-    while (fahr <= upper)
+    for (float fahr = 0; fahr <= 300; fahr += 20)
     {
-        printf("%3.0fF*\t\t%6.1fC*\n", fahr, celsius);
-        celsius = fahrToCelcius(fahr);
-        fahr += step;
+        printf("%3.0f *F\t\t%6.1f *C\n", fahr, fahrToCelcius(fahr));
     }
     return 0;
 }
