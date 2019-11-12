@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * K&R Exercise 2-10
  * Page 52
@@ -5,7 +6,13 @@
  * Completed
  **/
 
+int lower(int c)
+{
+    return (c >= 'A' && c <= 'Z') ? c + 'a' - 'A' : c;
+}
+
 int main(void)
 {
+    printf("%c is now %c", 'C', lower('C'));
     return 0;
 }
